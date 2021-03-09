@@ -1,2 +1,2 @@
-# OTUS-networks
-Here you can find all my "Network engineer. Basic." course homeworks.
+## OTUS-networks 
+**Here you can find all my "Network engineer. Basic." course homeworks.**
