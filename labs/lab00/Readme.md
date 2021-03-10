@@ -26,3 +26,5 @@
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_6.png)
 - #### Введя команду "show running-config" в режиме EXEC видим, что на коммутаторе находится пустой файл конфигурации по умолчанию:
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_7.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_8.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_9.png)
