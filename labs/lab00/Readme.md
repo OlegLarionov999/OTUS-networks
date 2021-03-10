@@ -24,7 +24,21 @@
 ### Шаг 2. Проверка настроек коммутатора по умолчанию.
 - #### Командой "enable" попадаем в привилегированный режим настройки коммутатора EXEC. Появившаяся "#" вместо ">" рядом с именем устройства означает, что мы перешли из пользовательского режима в привилегированный.
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_6.png)
+
 - #### Введя команду "show running-config" в режиме EXEC видим, что на коммутаторе находится пустой файл конфигурации по умолчанию:
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_7.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_8.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_9.png)
+
+- #### Изучив файл текущей конфигурации коммутатора "running-configuration", можно заметить, что у коммутатора cisco 2960 есть 24 интерфейса FastEthernet, 2 интерфейса GigabitEthernet, а диапазон значений, отображаемых в vty-линиях 0-15, т.е. возможно не более 16 одновременных подключений по виртуальному интерфейсу.
+
+- #### Для того, чтобы изучить файл загрузочной конфигурации "startup-configuration" введем команду "show startup-config", находясь в пользовательском режиме EXEC:
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_10.png)
+
+**Сообщение startup-config is not present означает, что мы не сохранили текущую конфигурацию "running-config" в файл загрузочной конфигурации "startup-config", т.е. файл загрузочной конфигурации на коммутаторе пока отсутствует**
+
+
+
+
+
+
