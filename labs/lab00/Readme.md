@@ -41,6 +41,7 @@
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_11.png) 
 
 **Что бы узнать, какой MAC-адрес имеет интерфейс SVI в сети VLAN 1, нужно выполнить команду "show interfaces vlan 1" в привилегированном режиме EXEC. В данном случае видим, что MAC-адрес это 000c.857b.539b т.е. 00.0c.85.7b.53.9b.**
+
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_12.png)
 
--#### Изучите IP-свойства интерфейса SVI сети VLAN 1
+- #### Изучите IP-свойства интерфейса SVI сети VLAN 1
