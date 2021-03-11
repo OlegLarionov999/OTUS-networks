@@ -82,6 +82,19 @@
 - #### Назначим IP-адрес и маску виртуальному интерфейсу SVI сети VLAN 1 коммутатора для возможности удаленного управления через Telnet или SSH.
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_23.png)
 
+- #### Так же поставим пароль на консольный порт удаленного подключения к коммутатору. Чтобы консольные сообщения не прерывали выполнение команд, используем параметр logging synchronous.
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_24.png)
+
+- #### То же самое сделаем и с каналами виртуального соединения vty чтобы в последствии подключаться через Telnet. Команда login нужна что бы порт выводил приглашение для аутентификации.
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_25.png)
+
+### Шаг 2. Настройка IP-адреса на компьютере PC-A.
+- #### Назначим PC-A IP-адрес и маску:
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_26.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_27.png)
+
+## Часть 3. Проверка сетевых подключений.
+### Шаг 1. Отобразим конфигурацию коммутатора.
 - #### 
 
 
