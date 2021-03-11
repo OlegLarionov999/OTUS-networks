@@ -77,4 +77,11 @@
 ## Часть 2. Настройка базовых параметров сетевых устройств.
 ### Шаг 1. Настройка базовых параметров коммутатора.
 - #### В режиме глобальной конфигурации настроим базовые параметры коммутатора. Сохраним текущую конфигурацию в память.
-![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_22.png) 
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_22.png)
+
+- #### Назначим IP-адрес и маску виртуальному интерфейсу SVI сети VLAN 1 коммутатора для возможности удаленного управления через Telnet или SSH.
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_23.png)
+
+- #### 
+
+
