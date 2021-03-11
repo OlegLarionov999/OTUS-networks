@@ -97,4 +97,24 @@
 ### Шаг 1. Отобразим конфигурацию коммутатора.
 - #### Выполняем команду "show running-config" в режиме EXEC. Файл конфигурации представлен [тут.](https://github.com/OlegLarionov999/OTUS-networks/blob/main/labs/lab00/show%20run)
 
+- #### Проверим параметры VLAN. Для начала "поднимем" виртуальный интерфейс SVI сети VLAN 1.
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_28.png)
+
+**Теперь, выполнив команду "show interface vlan 1" в режиме EXEC, изучим параметры сети VLAN 1. Пропускная способность SVI интерфейса равна 100000 Kbit. Сам VLAN 1 и канальный протокол находятся в активном состоянии.** 
+
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_29.png)
+
+### Шаг 2. Протестируем сквозное соединение, отправив эхо-запрос из терминала PC-A с помощью утилиты ping.
+- #### На IP-адрес самого PC-A (192.168.1.2):
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_30.png)
+
+- #### На административный адрес интерфейса SVI коммутатора S1 (192.168.1.1):
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_31.png)
+
+### Шаг 3. Проверка удаленного управления коммутатором с помощью Telnet.
+- #### 
+
+
+
+
 
