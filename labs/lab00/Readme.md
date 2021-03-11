@@ -112,9 +112,12 @@
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_31.png)
 
 ### Шаг 3. Проверка удаленного управления коммутатором с помощью Telnet.
-- #### 
+- #### Для начала зададим, по какому транспортному протоколу будет осуществляться подключение к терминальными линиям. Для этого в настройках конфигурирования терминальных линий vty введем команду "transport input telnet":
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_32.png)
 
+- #### Так как IP-адрес SVI мы прописали ранее, остается только подключиться через консоль PC-A к нашему коммутатору по Telnet. Для этого в консоли PC-A прописываем "telnet 192.168.1.1". 
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_33.png)
 
+**Подключение прошло успешно! Теперь, введя все требуемые пароли для входа в привилегированный режим, сохраним конфигурацию и завершим сеанс Telnet командой "exit"**
 
-
-
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_34.png)
