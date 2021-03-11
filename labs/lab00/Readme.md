@@ -95,6 +95,6 @@
 
 ## Часть 3. Проверка сетевых подключений.
 ### Шаг 1. Отобразим конфигурацию коммутатора.
-- #### 
+- #### Выполняем команду "show running-config" в режиме EXEC. Файл конфигурации представлен [тут.](https://github.com/OlegLarionov999/OTUS-networks/blob/main/labs/lab00/show%20run)
 
 
