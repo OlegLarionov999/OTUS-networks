@@ -14,3 +14,18 @@
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_35.jpg)
 
 ## Приступим к выполнению:
+## Часть 1. Создание и настройка сети.
+### Шаг 1. Создание сети согласно топологии:
+- #### Подключив порт "FastEthernet 0/0" PC-A к порту "FastEthernet 0/6" коммутатора S1, а так же порт "FastEthernet 0/0" PC-B к порту "FastEthernet 0/18" коммутатора S2, соединим порты "FastEthernet 0/1" коммутаторов между собой с помощью прямого кабеля Ethernet. Интерфейсы Fast Ethernet на коммутаторах Cisco 2960 определяют тип подключения
+автоматически, поэтому между коммутаторами S1 и S2 можно использовать прямой кабель Ethernet. При использовании коммутатора Cisco другой модели может потребоваться перекрестный кабель Ethernet т.к. коммутаторы находятся на одном уровне модели OSI - канальном.
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_36.png)
+
+- #### Настроим IP-адреса PC-A и PC-B, перейдя в окно "IP Confoguration" на рабочем столе конечного узла. Для PC-A:
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_37.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_38.png)
+
+**Аналогично для PC-B:**
+
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_39.png)
+
+- #### 
