@@ -28,4 +28,22 @@
 
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_39.png)
 
-- #### 
+- #### Выполним инициализацию и перезагрузку коммутаторов S1 и S2, подключившись к ним через с консольные порты с PC-A и PC-B соответственно. Для перезагрузки используем команду "reload" в терминалах PC-A и PC-B.
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_40.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_41.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_42.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_43.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_44.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
