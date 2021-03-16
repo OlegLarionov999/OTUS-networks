@@ -46,9 +46,21 @@
 
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_47.png)
 
-- #### Настроим IP-адреса для , как указано в таблице адресации.
+- #### Настроим IP-адреса для виртуальных интерфейсов SVI сетей VLAN коммутаторов S1 и S2 как указано в таблице адресации. Для коммутатора S1:
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_48.png)
 
-- #### Назначение паролей консольного подключения и vty.
+**Для коммутатора S2:**
+
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_49.png)
+
+- #### Назначим пароли консольного подключения и vty. В качестве пароля будем использовать "cisco". Для консольного порта "console 0", а так же всех виртуальных интерфейсов vty коммутатора S1:
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_50.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_52.png)
+
+**Аналогично для коммутатора S2:**
+
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_51.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_53.png)
 
 - #### Назначение пароля для привилегированного режима EXEC.
 
