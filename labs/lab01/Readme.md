@@ -62,10 +62,12 @@
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_51.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_53.png)
 
-- #### Назначение пароля для привилегированного режима EXEC.
+- #### Назначение пароля для привилегированного режима EXEC. Для коммутатора S1:
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_54.png)
 
+**Аналогично для коммутатора S2:**
 
-
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_55.png)
 
 
 
