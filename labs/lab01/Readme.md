@@ -27,7 +27,7 @@
 - #### Аналогично для PC-B:
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_39.png)
 
-### Шаг 3. Выполним инициализацию и перезагрузку коммутаторов S1 и S2, подключившись к ним через с консольные порты с PC-A и PC-B соответственно. 
+### Шаг 3. Выполним инициализацию и перезагрузку коммутаторов S1 и S2, подключившись к ним через консольные порты с PC-A и PC-B соответственно. 
 - #### Для перезагрузки используем команду "reload" в терминалах PC-A и PC-B. Для S1:
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_40.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_41.png)
