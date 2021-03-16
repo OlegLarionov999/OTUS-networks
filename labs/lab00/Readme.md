@@ -120,4 +120,4 @@
 
 **Подключение прошло успешно! Теперь, введя все требуемые пароли для входа в привилегированный режим, сохраним конфигурацию и завершим сеанс Telnet командой "exit"**
 
-![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_34.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_34.png) 
