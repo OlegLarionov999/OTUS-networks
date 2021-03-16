@@ -20,27 +20,33 @@
 автоматически, поэтому между коммутаторами S1 и S2 можно использовать прямой кабель Ethernet. При использовании коммутатора Cisco другой модели может потребоваться перекрестный кабель Ethernet т.к. коммутаторы находятся на одном уровне модели OSI - канальном.
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_36.png)
 
-- #### Настроим IP-адреса PC-A и PC-B, перейдя в окно "IP Confoguration" на рабочем столе конечного узла. Для PC-A:
+### Шаг 2. Настроим IP-адреса PC-A и PC-B, перейдя в окно "IP Confoguration" на рабочем столе каждого конечного узла. 
+- #### Для PC-A:
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_37.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_38.png)
 
-**Аналогично для PC-B:**
-
+- #### Аналогично для PC-B:
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_39.png)
 
-- #### Выполним инициализацию и перезагрузку коммутаторов S1 и S2, подключившись к ним через с консольные порты с PC-A и PC-B соответственно. Для перезагрузки используем команду "reload" в терминалах PC-A и PC-B. Для PC-A:
+### Шаг 3. Выполним инициализацию и перезагрузку коммутаторов S1 и S2, подключившись к ним через с консольные порты с PC-A и PC-B соответственно. 
+- #### Для перезагрузки используем команду "reload" в терминалах PC-A и PC-B. Для S1:
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_40.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_41.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_42.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_43.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_44.png)
 
-**В консольном терминале коммутатора S2 после перезагрузки инициализируются следующие порты:**  
-
+- #### В консольном терминале коммутатора S2 после перезагрузки инициализируются следующие порты: 
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_45.png)
 
+### Шаг 4. Настройка базовых параметров каждого коммутатора.
+- #### Настройка имен устройств в соответствии с топологией.
 
+- #### Настройка IP-адресов, как указано в таблице адресации.
 
+- #### Назначение паролей консольного подключения и vty.
+
+- #### Назначение пароля для привилегированного режима EXEC.
 
 
 
