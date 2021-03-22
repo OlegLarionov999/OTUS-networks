@@ -100,6 +100,8 @@
 - #### Выполним команду "arp -a" в командной строке компьютера PC-B. До осуществления эхо-запросов никаких соответствий IP-адресов MAC-адресам устройств в сети протокол ARP для PC-B не выявил.
 ![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_65.png)
 
-
-
-
+- #### Отправим эхо-запросы из командной строки PC-B на PC-A, а так же на коммутаторы S1 и S2. При этом поднимем наши интерфейсы VLAN 1 на каждом коммутаторе командой "no shutdown".
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_69.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_66.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_67.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_68.png)
