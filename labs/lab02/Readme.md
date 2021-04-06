@@ -10,7 +10,7 @@
 ![](https://github.com/OlegLarionov999/Images/blob/main/пр2.png)
 
 - #### Проблема 3:
-![](https://github.com/OlegLarionov999/Images/blob/main/пр3.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/пр7.png)
 
 - #### Проблема 4:
 ![](https://github.com/OlegLarionov999/Images/blob/main/пр4.png)
