@@ -25,4 +25,4 @@
 ![](https://github.com/OlegLarionov999/Images/blob/main/7.png)
 
 ### Шаг 2. Настройка коммутатора.
-- #### 
+
