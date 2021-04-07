@@ -27,7 +27,7 @@
 ### Шаг 2. Настройка коммутатора.
 ![](https://github.com/OlegLarionov999/Images/blob/main/8.png)
 
-- #### Шаблон по умолчанию менеджера базы данных 2960 Switch Database Manager (SDM) не поддерживает IPv6. Включим IPv6-адресацию, выполнив команду "sdm prefer dual-ipv4-and-ipv6 default". Теперь менеджер базы данных использует шаблон "dual-ipv4-and-ipv6". После перезагрузки коммутатора будет использоваться новый шаблон. Мы можем его изучить, выполнив команду "show sdm prefer" в режиме EXEC.
+- #### Шаблон по умолчанию менеджера базы данных 2960 Switch Database Manager (SDM) не поддерживает IPv6. Включим IPv6-адресацию, выполнив команду "sdm prefer dual-ipv4-and-ipv6 default". Теперь менеджер базы данных коммутатора использует шаблон "dual-ipv4-and-ipv6". После перезагрузки коммутатора будет использоваться новый шаблон. Мы можем его изучить, выполнив команду "show sdm prefer" в режиме EXEC.
 ![](https://github.com/OlegLarionov999/Images/blob/main/9.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/10.png)
 
