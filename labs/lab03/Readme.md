@@ -17,8 +17,8 @@
 ## Часть 1. Настройка топологии и конфигурация основных параметров маршрутизатора и коммутатора.
 ### Шаг 1. Настройка маршрутизатора.
 ![](https://github.com/OlegLarionov999/Images/blob/main/1.png)
-![](https://github.com/OlegLarionov999/Images/blob/main/2.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/3.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/2.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/4.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/5.png)
 ![](https://github.com/OlegLarionov999/Images/blob/main/6.png)
