@@ -9,8 +9,9 @@
 - #### Назначение IPv6-адреса интерфейсу управления (SVI) на S1.
 - #### Назначение компьютерам статических IPv6-адресов.
 ### Часть 3. Проверка сквозного подключения.
+
 ### Топология:
-![](https://github.com/OlegLarionov999/Images/blob/main/Screenshot_35.jpg)
+![](https://github.com/OlegLarionov999/Images/blob/main/dtRUW_Y21ZA.jpg)
 
 ## Приступим к выполнению:
 ## Часть 1. Создание и настройка сети.
