@@ -99,34 +99,44 @@
 
 ### Шаг 6. Установите соединение с маршрутизатором по протоколу SSH.
 - #### Запустите Tera Term с PC-A.
-![](https://github.com/OlegLarionov999/Images/blob/main/lab04/24.png)
 
 - #### Установите SSH-подключение к R1. Используем имя пользователя "admin" и пароль "Adm1nP@55". Должно получиться установить SSH-подключение к R1.
-![](https://github.com/OlegLarionov999/Images/blob/main/lab04/25.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/24.png)
 
 ## Часть 3. Настройка коммутатора для доступа по протоколу SSH.
 ### Шаг 1. Настройте основные параметры коммутатора.
 - #### Откройте окно конфигурации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/25.png)
 
 - #### Подключитесь к коммутатору с помощью консольного подключения и активируйте привилегированный режим EXEC.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/26.png)
 
 - #### Войдите в режим конфигурации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/27.png)
 
 - #### Отключите поиск DNS, чтобы предотвратить попытки маршрутизатора неверно преобразовывать введенные команды таким образом, как будто они являются именами узлов.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/28.png)
 
 - #### Назначьте "class" в качестве зашифрованного пароля привилегированного режима EXEC.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/29.png)
 
 - #### Назначьте "cisco" в качестве пароля консоли и включите вход в систему по паролю.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/30.png)
 
 - #### Назначьте "cisco" в качестве пароля VTY и включите вход в систему по паролю.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/31.png)
 
 - #### Зашифруйте открытые пароли.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/32.png)
 
 - #### Создайте баннер, который предупреждает о запрете несанкционированного доступа.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/33.png)
 
 - #### Настройте и активируйте на коммутаторе интерфейс VLAN 1, используя информацию, приведенную в таблице адресации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/34.png)
 
 - #### Сохраните текущую конфигурацию в файл загрузочной конфигурации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/35.png)
 
 ### Шаг 2 Настройте коммутатор для соединения по протоколу SSH.
 - #### Настройте имя устройства, как указано в таблице адресации.
