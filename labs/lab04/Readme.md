@@ -23,7 +23,8 @@
 
 ### Топология:
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab04/1.png)
-
+### Таблица адресации:
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/2.png)
 ## Приступим к выполнению:
 ## Часть 1. Настройка основных параметров устройств.
 ### Шаг 1. Настройка маршрутизатора.
