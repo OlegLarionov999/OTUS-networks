@@ -31,28 +31,39 @@
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab04/3.png)
 
 ### Шаг 2. Выполните инициализацию и перезагрузку маршрутизатора и коммутатора.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/4.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/5.png)
 
 ### Шаг 3. Настройте маршрутизатор.
-
 - #### Подключитесь к маршрутизатору с помощью консоли и активируйте привилегированный режим EXEC.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/6.png)
 
 - #### Войдите в режим конфигурации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/7.png)
 
 - #### Отключите поиск DNS, чтобы предотвратить попытки маршрутизатора неверно преобразовывать введенные команды таким образом, как будто они являются именами узлов.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/8.png)
 
 - #### Назначьте "class" в качестве зашифрованного пароля привилегированного режима EXEC.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/9.png)
 
 - #### Назначьте "cisco" в качестве пароля консоли и включите вход в систему по паролю.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/10.png)
 
 - #### Назначьте "cisco" в качестве пароля VTY и включите вход в систему по паролю.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/11.png)
 
 - #### Зашифруйте открытые пароли.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/12.png)
 
 - #### Создайте баннер, который предупреждает о запрете несанкционированного доступа.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/13.png)
 
 - #### Настройте и активируйте на маршрутизаторе интерфейс G0/0/1, используя информацию, приведенную в таблице адресации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/14.png)
 
 - #### Сохраните текущую конфигурацию в файл загрузочной конфигурации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab04/15.png)
 
 ### Шаг 4. Настройте компьютер PC-A.
 - #### Настройте для PC-A IP-адрес и маску подсети, а так же шлюз по умолчанию.
