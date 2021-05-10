@@ -18,7 +18,7 @@
 ### Часть 4. Наблюдение за процессом выбора протоколом STP порта, исходя из приоритета портов.
 
 ### Топология:
-![](https://github.com/OlegLarionov999/Images/blob/main/lab06/Screenshot_2.png)
-### Таблица адресации:
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab06/Screenshot_4.png)
+### Таблица адресации:
+![](https://github.com/OlegLarionov999/Images/blob/main/lab06/Screenshot_2.png)
 ## Приступим к выполнению:
