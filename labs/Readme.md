@@ -5,3 +5,6 @@
 - [Labwork 4. Configure IPv6 addresses on network devices.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab03)
 - [Labwork 5. Configure network devices with SSH.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab04)
 - [Labwork 6. Implement inter VLAN routing.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab05) 
+- [Labwork 7. Building a switched network with redundant links.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab06)
+- [Labwork 8. Implement DHCPv4.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab07)
+- [Labwork 9. Configure DHCPv6.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab08)
