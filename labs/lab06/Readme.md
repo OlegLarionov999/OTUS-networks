@@ -20,5 +20,5 @@
 ### Топология:
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab06/Screenshot_2.png)
 ### Таблица адресации:
-![](https://github.com/OlegLarionov999/Images/blob/main/lab06/Screenshot_1.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab06/Screenshot_4.png)
 ## Приступим к выполнению:
