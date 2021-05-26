@@ -28,14 +28,17 @@
 ## Приступим к выполнению:
 ## Часть 1. Создание сети и настройка основных параметров устройства.
 ### Шаг 1. Создание схемы адресации (Подсети сети 192.168.1.0/24 в соответствии со следующими требованиями).
-- #### Одна подсеть «Подсеть A», поддерживающая 58 хостов (клиентская VLAN на R1). Запишите первый IP-адрес в таблице адресации для R1 G0/0/1.100. Запишите второй IP-адрес в таблице адресов для S1 VLAN 200 и введите соответствующий шлюз по умолчанию.
+- #### Одна подсеть «Подсеть A», поддерживающая 58 хостов (клиентская VLAN на R1). Запишите первый IP-адрес в таблице адресации для R1 G0/0/1.100.
 
-- #### Одна подсеть «Подсеть B», поддерживающая 28 хостов (управляющая VLAN на R1). Запишите первый IP-адрес в таблице адресации для R1 G0/0/1.200. Запишите второй IP-адрес в таблице адресов для S1 VLAN 1 и введите соответствующий шлюз по умолчанию.
+- #### Одна подсеть «Подсеть B», поддерживающая 28 хостов (управляющая VLAN на R1). Запишите первый IP-адрес в таблице адресации для R1 G0/0/1.200. Запишите второй IP-адрес в таблице адресов для S1 VLAN 200 и введите соответствующий шлюз по умолчанию.
 
-- #### Одна подсеть «Подсеть C», поддерживающая 12 узлов (клиентская сеть на R2). Запишите первый IP-адрес в таблице адресации для R2 G0/0/1.
+- #### Одна подсеть «Подсеть C», поддерживающая 12 узлов (клиентская сеть на R2). Запишите первый IP-адрес в таблице адресации для R2 G0/0/1. Запишите второй IP-адрес в таблице адресов для S2 VLAN 1 и введите соответствующий шлюз по умолчанию.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_5.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_4.png)
 
 ### Шаг 2. Создайте сеть согласно топологии.
 - #### Подключите устройства, как показано в топологии, и подсоедините необходимые кабели.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_6.png)
 
 ### Шаг 3. Произведите базовую настройку маршрутизаторов.
 - #### Назначьте маршрутизатору имя устройства.
@@ -57,24 +60,41 @@
 - #### Сохраните текущую конфигурацию в файл загрузочной конфигурации.
 
 - #### Установите часы на маршрутизаторе на сегодняшнее время и дату.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_7.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_8.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_9.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_10.png)
 
 ### Шаг 4. Настройка маршрутизации между сетями VLAN на маршрутизаторе R1.
 - #### Активируйте интерфейс G0/0/1 на маршрутизаторе.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_11.png)
 
 - #### Настройте подинтерфейсы для каждой VLAN в соответствии с требованиями таблицы IP-адресации. Все субинтерфейсы используют инкапсуляцию 802.1Q и назначаются первый полезный адрес из вычисленного пула IP-адресов. Убедитесь, что подинтерфейсу для native VLAN не назначен IP-адрес. Включите описание для каждого подинтерфейса.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_12.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_13.png)
 
 - #### Убедитесь, что вспомогательные интерфейсы работают.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_14.png)
 
 ### Шаг 5. Настройте G0/1 на R2, затем G0/0/0 и статическую маршрутизацию для обоих маршрутизаторов.
 - #### Настройте G0/0/1 на R2 с первым IP-адресом подсети C, рассчитанным ранее.
 
 - #### Настройте интерфейс G0/0/0 для каждого маршрутизатора на основе приведенной выше таблицы IP-адресации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_16.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_15.png)
 
 - #### Настройте маршрут по умолчанию на каждом маршрутизаторе, указываемом на IP-адрес G0/0/0 на другом маршрутизаторе.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_17.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_18.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_19.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_20.png)
 
 - #### Убедитесь, что статическая маршрутизация работает с помощью пинга до адреса G0/0/1 R2 от R1.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_21.png)
 
 - #### Сохраните текущую конфигурацию в файл загрузочной конфигурации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_22.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_23.png)
 
 ### Шаг 6. Настройте базовые параметры каждого коммутатора.
 - #### Присвойте коммутатору имя устройства.
@@ -96,35 +116,63 @@
 - #### Установите часы на маршрутизаторе на сегодняшнее время и дату.
 
 - #### Скопируйте текущую конфигурацию в файл загрузочной конфигурации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_24.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_25.png)
 
 ### Шаг 7. Создайте сети VLAN на коммутаторе S1.
 - #### Создайте необходимые VLAN на коммутаторе 1 и присвойте им имена из приведенной выше таблицы.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_26.png)
 
 - #### Настройте и активируйте интерфейс управления на S1 (VLAN 200), используя второй IP-адрес из подсети, рассчитанный ранее. Кроме того установите шлюз по умолчанию на S1.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_27.png)
 
 - #### Настройте и активируйте интерфейс управления на S2 (VLAN 1), используя второй IP-адрес из подсети, рассчитанный ранее. Кроме того, установите шлюз по умолчанию на S2.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_28.png)
 
 - #### Назначьте все неиспользуемые порты S1 VLAN Parking_Lot, настройте их для статического режима доступа и административно деактивируйте их. На S2 административно деактивируйте все неиспользуемые порты.
 
+**Для S1:**
+
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_29.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_30.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_31.png)
+
+**Для S2:**
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_32.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_33.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_34.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_35.png)
+
+
 ### Шаг 8. Назначьте сети VLAN соответствующим интерфейсам коммутатора.
 - #### Назначьте используемые порты соответствующей VLAN (указанной в таблице VLAN выше) и настройте их для режима статического доступа.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_36.png)
 
 - #### Убедитесь, что VLAN назначены на правильные интерфейсы.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_37.png)
 
 - #### Почему интерфейс F0/5 указан в VLAN 1?
 
+**Интерфейс F0/5 послужит нам магистральным каналом от коммутатора S1 к роутеру R1.**
+
 ### Шаг 9. Вручную настройте интерфейс S1 F0/5 в качестве транка 802.1Q.
 - #### Измените режим порта коммутатора, чтобы принудительно создать магистральный канал.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_38.png)
 
 - #### В рамках конфигурации транка установите для native VLAN значение 1000.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_39.png)
 
 - #### В качестве другой части конфигурации магистрали укажите, что VLAN 100, 200 и 1000 могут проходить по транку.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_40.png)
 
 - #### Сохраните текущую конфигурацию в файл загрузочной конфигурации.
 
 - #### Проверьте состояние транка.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_44.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_45.png)
 
 - #### Какой IP-адрес был бы у ПК, если бы он был подключен к сети с помощью DHCP?
+
 
 ## Часть 2. Настройка и проверка двух серверов DHCPv4 на R1.
 ### Шаг 1. Настройте R1 с пулами DHCPv4 для двух поддерживаемых подсетей. Ниже приведен только пул DHCP для подсети A.
