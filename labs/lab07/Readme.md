@@ -252,6 +252,6 @@
 
 - #### Выполните команду show ip dhcp server statistics для проверки сообщений DHCP.
 
-**Кажется, такой команды в Packet Tracer нет**
+**Кажется, такой команды в Packet Tracer нет.**
 
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_62.png)
