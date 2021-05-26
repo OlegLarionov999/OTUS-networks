@@ -166,6 +166,8 @@
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_40.png)
 
 - #### Сохраните текущую конфигурацию в файл загрузочной конфигурации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_46.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_47.png)
 
 - #### Проверьте состояние транка.
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_44.png)
@@ -173,66 +175,83 @@
 
 - #### Какой IP-адрес был бы у ПК, если бы он был подключен к сети с помощью DHCP?
 
+**Чтобы DHCP-сервер мог назначать адреса, нужно сначала выделить пулы для каждого из VLAN и исключить адреса, назначенные нами статически, прописав при этом шлюз по умолчанию при конфигурации каждого пула IP-адресов. Таким образов, при подключении PC к VLAN, для которого IP-адреса назначает DHCP, для конечного узла будет определен первый свободный IP-адрес из пула, предназначенного для VLAN, в котором находится наш PC. Исключенные из пула DHCP-сервера адреса назначаться не будут.**
 
 ## Часть 2. Настройка и проверка двух серверов DHCPv4 на R1.
 ### Шаг 1. Настройте R1 с пулами DHCPv4 для двух поддерживаемых подсетей. Ниже приведен только пул DHCP для подсети A.
 - #### Исключите первые пять используемых адресов из каждого пула адресов.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_48.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_49.png)
 
 - #### Создайте пул DHCP (используйте уникальное имя для каждого пула).
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_50.png)
 
 - #### Укажите сеть, поддерживающую этот DHCP-сервер.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_51.png)
 
 - #### В качестве имени домена укажите CCNA-lab.com.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_53.png)
 
 - #### Настройте соответствующий шлюз по умолчанию для каждого пула DHCP.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_52.png)
 
 - #### Настройте время аренды на 2 дня 12 часов и 30 минут.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_54.png)
 
 - #### Затем настройте второй пул DHCPv4, используя имя пула R2_Client_LAN и вычислите сеть, маршрутизатор по умолчанию, и используйте то же имя домена и время аренды, что и предыдущий пул DHCP.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_55.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_74.png)
 
 ### Шаг 2. Сохраните конфигурацию.
 - #### Сохраните текущую конфигурацию в файл загрузочной конфигурации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_56.png)
 
 ### Шаг 3. Проверка конфигурации сервера DHCPv4.
 - #### Чтобы просмотреть сведения о пуле, выполните команду show ip dhcp pool.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_58.png)
 
 - #### Выполните команду show ip dhcp bindings для проверки установленных назначений адресов DHCP.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_60.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_61.png)
 
 - #### Выполните команду show ip dhcp server statistics для проверки сообщений DHCP.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_62.png)
 
 ### Шаг 4. Попытка получить IP-адрес от DHCP на PC-A.
 - #### Из командной строки компьютера PC-A выполните команду ipconfig /all.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_63.png)
 
 - #### После завершения процесса обновления выполните команду ipconfig для просмотра новой информации об IP-адресе.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_64.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_65.png)
 
 - #### Проверьте подключение с помощью пинга IP-адреса интерфейса R0 G0/0/1.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_66.png)
 
 ## Часть 3. Настройка и проверка DHCP-ретрансляции на R2. В части 3 настраивается R2 для ретрансляции DHCP-запросов из локальной сети на интерфейсе G0/0/1 на DHCP-сервер (R1).
 ### Шаг 1. Настройка R2 в качестве агента DHCP-ретрансляции для локальной сети на G0/0/1.
 - #### Настройте команду ip helper-address на G0/0/1, указав IP-адрес G0/0/0 R1.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_67.png)
 
 - #### Сохраните конфигурацию.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_68.png)
 
 ### Шаг 2. Попытка получить IP-адрес от DHCP на PC-B.
 - #### Из командной строки компьютера PC-B выполните команду ipconfig /all.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_69.png)
 
 - #### После завершения процесса обновления выполните команду ipconfig для просмотра новой информации об IP-адресе.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_70.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_71.png)
 
 - #### Проверьте подключение с помощью пинга IP-адреса интерфейса R1 G0/0/1.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_72.png)
 
 - #### Выполните show ip dhcp binding для R1 для проверки назначений адресов в DHCP.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_73.png)
 
 - #### Выполните команду show ip dhcp server statistics для проверки сообщений DHCP.
 
+**Кажется, такой команды в Packet Tracer нет**
 
-
-
-
-
-
-
-
-
-
-
-
+![](https://github.com/OlegLarionov999/Images/blob/main/lab07/Screenshot_62.png)
