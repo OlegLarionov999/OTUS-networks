@@ -8,3 +8,6 @@
 - [Labwork 7. Building a switched network with redundant links.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab06)
 - [Labwork 8. Implement DHCPv4.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab07)
 - [Labwork 9. Configure DHCPv6.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab08)
+- [Labwork 10. Switch security configuration.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab09)
+- [Labwork 11. Configure single area OSPFv2.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab10)
+- [Labwork 12. Configure and verify extended IPv4 ACLs.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab11)
