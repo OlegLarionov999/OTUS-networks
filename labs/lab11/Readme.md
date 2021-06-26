@@ -25,14 +25,17 @@
 - #### Шаг 3. Убедитесь, что политики безопасности применяются развернутыми списками доступа.
 
 ### Топология:
-![]()
+![](https://github.com/OlegLarionov999/Images/blob/main/lab11/Screenshot_1.png)
 ### Таблица адресации:
-![]()
+![](https://github.com/OlegLarionov999/Images/blob/main/lab11/Screenshot_2.png)
 ### Таблица VLAN:
-![]()
+![](https://github.com/OlegLarionov999/Images/blob/main/lab11/Screenshot_3.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab11/Screenshot_4.png)
+
 ## Приступим к выполнению:
 ## Часть 1. Создание сети и настройка основных параметров устройства.
 ### Шаг 1. Создайте сеть согласно топологии.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab11/Screenshot_41.png)
 
 ### Шаг 2. Произведите базовую настройку маршрутизаторов.
 - #### Назначьте маршрутизатору имя устройства.
