@@ -12,3 +12,4 @@
 - [Labwork 11. Configure single area OSPFv2.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab10)
 - [Labwork 12. Configure and verify extended IPv4 ACLs.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab11)
 - [Labwork 13. Configure NAT.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab12)
+- [Labwork 14. Configure CDP, LLDP and NTP.](https://github.com/OlegLarionov999/OTUS-networks/tree/main/labs/lab13)
