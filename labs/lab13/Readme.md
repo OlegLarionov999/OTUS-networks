@@ -95,7 +95,7 @@
 - #### На R1 выполните команду show cdp entry S1 .
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab13/Screenshot_15.png)
 
-- #### Вопрос: Какие дополнительные сведения доступны теперь?
+- #### Вопрос: Какие дополнительные сведения доступны теперь? - См. пункт выше.
 
 - #### Отключить CDP глобально на всех устройствах.
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab13/Screenshot_17.png)
