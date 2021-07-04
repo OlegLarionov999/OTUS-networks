@@ -20,12 +20,15 @@
 - #### Шаг 3. Протестируйте и проверьте конфигурацию.
 
 ### Топология:
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_2.png)
 
 ### Таблица адресации:
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_1.png)
+
 ## Приступим к выполнению:
 ## Часть 1. Создание сети и настройка основных параметров устройства.
 ### Шаг 1. Подключите кабели сети согласно приведенной топологии.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_3.png)
 
 ### Шаг 2. Произведите базовую настройку маршрутизаторов.
 - #### Назначьте маршрутизатору имя устройства.
@@ -47,6 +50,11 @@
 - #### Настройте маршрут по умолчанию. от R2 до R1.
 
 - #### Сохраните текущую конфигурацию в файл загрузочной конфигурации.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_4.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_5.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_6.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_7.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_8.png)
 
 ### Шаг 3. Настройте базовые параметры каждого коммутатора.
 - #### Присвойте коммутатору имя устройства.
@@ -69,52 +77,97 @@
 
 - #### Сохраните текущую конфигурацию в файл загрузочной конфигурации.
 
+**Для S1:**
+
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_9.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_10.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_11.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_12.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_13.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_30.png)
+
+**Для S2:**
+
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_14.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_15.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_16.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_17.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_18.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_31.png)
+
 ## Часть 2. Настройка и проверка NAT для IPv4.
 ### Шаг 1. Настройте NAT на R1, используя пул из трех адресов 209.165.200.226 - 209.165.200.228.
 - #### Настройте простой список доступа, который определяет, какие хосты будут разрешены для трансляции. В этом случае все устройства в локальной сети R1 имеют право на трансляцию.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_19.png)
 
 - #### Создайте пул NAT и укажите ему имя и диапазон используемых адресов. Примечание. Параметр маски сети не является разделителем IP-адресов. Это должна быть правильная маска подсети для назначенных адресов, даже если вы используете не все адреса подсети в пуле.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_20.png)
 
 - #### Настройте перевод, связывая ACL и пул с процессом преобразования. Примечание: Три очень важных момента. Во-первых, слово «inside» имеет решающее значение для работы такого рода NAT. Если вы опустить его, NAT не будет работать. Во-вторых, номер списка — это номер ACL, настроенный на предыдущем шаге. В-третьих, имя пула чувствительно к регистру.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_21.png)
 
 - #### Задайте внутренний (inside) интерфейс.
 
 - #### Определите внешний (outside) интерфейс.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_22.png)
 
 ### Шаг 2. Проверьте конфигурацию.
 - #### С PC-B, запустите эхо-запрос интерфейса Lo1 (209.165.200.1) на R2. Если эхо-запрос не прошел, выполните процес поиска и устранения неполадок. На R1 отобразите таблицу NAT на R1 с помощью команды "show ip nat translations". 
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_23.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_24.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_25.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_26.png)
 
 - #### Во что был транслирован внутренний локальный адрес PC-B? Какой тип адреса NAT является переведенным адресом?
+Внутренний локальный адрес PC-B был транслирован во внутренний глобальный адрес 209.165.200.226.
 
 - #### С PC-A, запустите эхо-запрос интерфейса Lo1 (209.165.200.1) на R2. Если эхо-запрос не прошел, выполните отладку. На R1 отобразите таблицу NAT на R1 с помощью команды "show ip nat translations".
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_27.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_28.png)
 
 - #### Обратите внимание, что предыдущая трансляция для PC-B все еще находится в таблице. Из S1, эхо-запрос интерфейса Lo1 (209.165.200.1) на R2. Если эхо-запрос не прошел, выполните отладку. На R1 отобразите таблицу NAT на R1 с помощью команды show ip nat translations.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_29.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_32.png)
 
 - #### Теперь запускаем пинг R2 Lo1 из S2. На этот раз перевод завершается неудачей, и вы получаете эти сообщения (или аналогичные) на консоли R1.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_33.png)
 
 - #### Это ожидаемый результат, потому что выделено только 3 адреса, и мы попытались ping Lo1 с четырех устройств. Напомним, что NAT — это трансляция «один-в-один». Как много выделено трансляций? Введите команду "show ip nat translations verbose", и вы увидите, что ответ будет 24 часа.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_34.png)
 
-- #### Учитывая, что пул ограничен тремя адресами, NAT для пула адресов недостаточно для нашего приложения. Очистите преобразование NAT и статистику, и мы перейдем к PAT.
+- #### Учитывая, что пул ограничен тремя адресами, NAT для пула адресов недостаточно для нашего приложения. Очистите преобразование NAT и статистику, и мы перейдем к PAT. Команда "clear ip nat statistics" не реализована в Cisco Packet Tracer. Выполним команду "clear ip nat translations *".
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_35.png)
 
 ## Часть 3. Настройка и проверка PAT для IPv4. В части 3 необходимо настроить замену NAT на PAT в пул адресов, а затем на PAT с помощью интерфейса.
 ### Шаг 1. Удалите команду преобразования на R1.
 - #### Компоненты конфигурации преобразования адресов в основном одинаковы; что-то (список доступа) для идентификации адресов, пригодных для перевода, дополнительно настроенный пул адресов для их преобразования и команды, необходимые для идентификации внутреннего и внешнего интерфейсов. Из части 1 наш список доступа (список доступа 1) по-прежнему корректен для сетевого сценария, поэтому нет необходимости воссоздавать его. Мы будем использовать один и тот же пул адресов, поэтому нет необходимости воссоздавать эту конфигурацию. Кроме того, внутренний и внешний интерфейсы не меняются. Чтобы начать работу в части 3, удалите команду, связывающую ACL и пул вместе.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_36.png)
 
 ### Шаг 2. Добавьте команду PAT на R1.
 - #### Теперь настройте преобразование PAT в пул адресов (помните, что ACL и Pool уже настроены, так что это единственная команда, которую нам нужно изменить с NAT на PAT).
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_37.png)
 
 ### Шаг 3. Протестируйте и проверьте конфигурацию.
 - #### Давайте проверим, что PAT работает. С PC-B, запустите эхо-запрос интерфейса Lo1 (209.165.200.1) на R2. Если эхо-запрос не прошел, выполните отладку. На R1 отобразите таблицу NAT на R1 с помощью команды "show ip nat translations".
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_38.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_39.png)
 
-- #### Во что был транслирован внутренний локальный адрес PC-B?
+- #### Во что был транслирован внутренний локальный адрес PC-B - в 209.165.200.226.
 
 - #### Какой тип адреса NAT является переведенным адресом?
+Внутренний глобальный адрес.
 
 - #### Чем отличаются выходные данные команды "show ip nat translations" из упражнения NAT?
+Отличий я не заметил.
 
 - #### С PC-A, запустите эхо-запрос интерфейса Lo1 (209.165.200.1) на R2. Если эхо-запрос не прошел, выполните отладку. На R1 отобразите таблицу NAT на R1 с помощью команды "show ip nat translations".
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_41.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_42.png)
+
+**Так как я отправлял множественные эхо запросы, то записей несколько**
 
 - #### Обратите внимание, что есть только одна трансляция. Отправьте ping еще раз, и быстро вернитесь к маршрутизатору и введите команду "show ip nat translations verbose", и вы увидите, что произошло. Как вы можете видеть, время ожидания перевода было отменено с 24 часов до 1 минуты.
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_43.png)
 
 - #### Генерирует трафик с нескольких устройств для наблюдения PAT. На PC-A и PC-B используйте параметр -t с командой ping, чтобы отправить безостановочный ping на интерфейс Lo1 R2 (ping -t 209.165.200.1), затем вернитесь к R1 и выполните команду "show ip nat translations".
 
