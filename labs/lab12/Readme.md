@@ -150,7 +150,7 @@
 ### Шаг 3. Протестируйте и проверьте конфигурацию.
 - #### Давайте проверим, что PAT работает. С PC-B, запустите эхо-запрос интерфейса Lo1 (209.165.200.1) на R2. Если эхо-запрос не прошел, выполните отладку. На R1 отобразите таблицу NAT на R1 с помощью команды "show ip nat translations".
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_38.png)
-![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_39.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_99.png)
 
 - #### Во что был транслирован внутренний локальный адрес PC-B - в 209.165.200.226.
 
@@ -162,12 +162,12 @@
 
 - #### С PC-A, запустите эхо-запрос интерфейса Lo1 (209.165.200.1) на R2. Если эхо-запрос не прошел, выполните отладку. На R1 отобразите таблицу NAT на R1 с помощью команды "show ip nat translations".
 ![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_41.png)
-![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_42.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_39.png)
 
 **Так как я отправлял множественные эхо запросы, то записей несколько**
 
 - #### Обратите внимание, что есть только одна трансляция. Отправьте ping еще раз, и быстро вернитесь к маршрутизатору и введите команду "show ip nat translations verbose", и вы увидите, что произошло. Как вы можете видеть, время ожидания перевода было отменено с 24 часов до 1 минуты.
-![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_43.png)
+![](https://github.com/OlegLarionov999/Images/blob/main/lab12/Screenshot_42.png)
 
 - #### Генерирует трафик с нескольких устройств для наблюдения PAT. На PC-A и PC-B используйте параметр -t с командой ping, чтобы отправить безостановочный ping на интерфейс Lo1 R2 (ping -t 209.165.200.1), затем вернитесь к R1 и выполните команду "show ip nat translations".
 
